@@ -1,6 +1,10 @@
 import React from 'react';
 import { Table, Thead, Tbody, Tr, Th, Td, } from "@chakra-ui/react"
 
+const trimNumber = (num) => {
+    return (Math.round(num * 100) / 100).toFixed(2);
+}
+
 const WinsTable = ({tableData}) => {
     return (
         <Table>
@@ -12,7 +16,6 @@ const WinsTable = ({tableData}) => {
                     <Th>Cost Per Expected Win</Th>
                     <Th>Actual Wins</Th>
                     <Th>Cost Per Actual Win</Th>
-                    <Th>Other Details</Th>
                 </Tr>
             </Thead>
             <Tbody>
@@ -22,9 +25,9 @@ const WinsTable = ({tableData}) => {
                             <Td>{edge.node.team}</Td>
                             <Td>{edge.node.owner}</Td>
                             <Td>{edge.node.expectedWins}</Td>
-                            <Td>{edge.node.costPerExpectedWin}</Td>
+                            <Td>{trimNumber(edge.node.costPerExpectedWin)}</Td>
                             <Td>{edge.node.actualWins}</Td>
-                            <Td>{edge.node.costPerActualWin}</Td>
+                            <Td>{trimNumber(edge.node.costPerActualWin)}</Td>
                         </Tr>
                     ))
                 }

@@ -1,6 +1,6 @@
 import * as React from "react"
 import { graphql, useStaticQuery } from "gatsby"
-import { Button, Heading, } from "@chakra-ui/react"
+import { Heading, } from "@chakra-ui/react"
 import WinsTable from "../components/WinsTable";
 
 const QUERY = graphql`
