@@ -25,7 +25,7 @@ const IndexPage = () => {
   return (
     <main>
       <title>Betting Board</title>
-      <Heading style={{textAlign:'center'}}>Betting Board - RosterFreak</Heading>
+      <Heading style={{textAlign:'center'}}>Team Auction - RosterFreak</Heading>
       <WinsTable tableData={allGoogleSpreadsheetDisplay} />
     </main>
   )
