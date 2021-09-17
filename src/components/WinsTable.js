@@ -7,15 +7,16 @@ const trimNumber = (num) => {
 
 const WinsTable = ({tableData}) => {
     return (
-        <Table>
+        <Table variant="striped" colorScheme="blue" size="lg">
             <Thead>
                 <Tr>
                     <Th>Team</Th>
                     <Th>Owner</Th>
-                    <Th>Expected Wins</Th>
-                    <Th>Cost Per Expected Win</Th>
-                    <Th>Actual Wins</Th>
-                    <Th>Cost Per Actual Win</Th>
+                    <Th isNumeric>Cost</Th>
+                    <Th isNumeric>Actual Wins</Th>
+                    <Th isNumeric>Cost Per Actual Win</Th>
+                    <Th isNumeric>Expected Wins</Th>
+                    <Th isNumeric>Cost Per Expected Win</Th>                    
                 </Tr>
             </Thead>
             <Tbody>
@@ -24,10 +25,11 @@ const WinsTable = ({tableData}) => {
                         <Tr key={edge.node.id}>
                             <Td>{edge.node.team}</Td>
                             <Td>{edge.node.owner}</Td>
-                            <Td>{edge.node.expectedWins}</Td>
-                            <Td>{trimNumber(edge.node.costPerExpectedWin)}</Td>
-                            <Td>{edge.node.actualWins}</Td>
-                            <Td>{trimNumber(edge.node.costPerActualWin)}</Td>
+                            <Td isNumeric>${edge.node.cost}</Td>
+                            <Td isNumeric>{edge.node.actualWins}</Td>
+                            <Td isNumeric>${trimNumber(edge.node.costPerActualWin)}</Td>
+                            <Td isNumeric>{edge.node.expectedWins}</Td>
+                            <Td isNumeric>${trimNumber(edge.node.costPerExpectedWin)}</Td>                            
                         </Tr>
                     ))
                 }

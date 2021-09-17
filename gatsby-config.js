@@ -31,8 +31,8 @@ const buildCredentials = ({ PROJECT_ID, PRIVATE_KEY, PRIVATE_KEY_ID }) => {
 
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "RF Team Auction",
+    siteUrl: "https://auction.rosterfreak.com",
+    title: "RosterFreak Team Auction",
   },
   plugins: ["gatsby-plugin-gatsby-cloud",
   {
@@ -54,7 +54,6 @@ module.exports = {
     resolve: "gatsby-source-google-spreadsheet",
     options: {
       spreadsheetId: process.env.SPREADSHEET_ID,
-      worksheetTitle: 'Display',
       spreadsheetName: '',
       credentials: buildCredentials(process.env),
     }
