@@ -1,9 +1,6 @@
 import React from 'react';
 import { Table, Thead, Tbody, Tr, Th, Td, } from "@chakra-ui/react"
-
-const trimNumber = (num) => {
-    return (Math.round(num * 100) / 100).toFixed(2);
-}
+import { trimNumber } from '../util/basic-helpers';
 
 const WinsTable = ({tableData}) => {
     return (
