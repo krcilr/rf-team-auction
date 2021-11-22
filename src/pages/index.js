@@ -7,7 +7,7 @@ import PayoutsTab from '../components/PayoutsTab'
 
 const DISPLAY_QUERY = graphql`
 query MyQuery {
-  allGoogleSpreadsheetDisplay {
+  allGoogleSpreadsheetDisplay (sort: {order:ASC, fields: order}) {
     edges {
       node {
         team
@@ -21,7 +21,7 @@ query MyQuery {
     }
   }
 
-  allGoogleSpreadsheetDisplayOwnersTeams {
+  allGoogleSpreadsheetDisplayOwnersTeams (sort: {order:ASC, fields: order}) {
     edges {
       node {
         order
@@ -45,7 +45,7 @@ query MyQuery {
     }
   }
 
-  allGoogleSpreadsheetDisplayPayouts {
+  allGoogleSpreadsheetDisplayPayouts (sort: {order:ASC, fields: order}){
     edges {
       node {
         winners
