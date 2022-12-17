@@ -12,7 +12,7 @@ const OwnersTable = ({ tableData }) => {
         <Table className="ownersTable" variant="simple" colorScheme="blue" size="md">
             <Thead>
                 <Tr>
-                    <Th>Ryan</Th>
+                    <Th>Krcil</Th>
                     <Th></Th>
                     <Th className="alt-column">Brandon</Th>
                     <Th className="alt-column"></Th>
@@ -34,8 +34,8 @@ const OwnersTable = ({ tableData }) => {
                 {
                     tableData.edges.map((edge, index) => (
                         <Tr key={edge.node.id}>
-                            <Td>{edge.node.ryan}</Td>
-                            <Td>{formatNumberColumn(edge.node.ryanWins, index)}</Td>
+                            <Td>{edge.node.krcil}</Td>
+                            <Td>{formatNumberColumn(edge.node.krcilWins, index)}</Td>
                             <Td className="alt-column">{edge.node.brandon}</Td>
                             <Td className="alt-column">{formatNumberColumn(edge.node.brandonWins, index)}</Td>
                             <Td>{edge.node.adam}</Td>

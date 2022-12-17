@@ -35,8 +35,8 @@ query MyQuery {
         brandonWins
         cody
         codyWins
-        ryan
-        ryanWins
+        krcil
+        krcilWins
         shane
         shaneWins
         trevor
