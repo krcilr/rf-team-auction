@@ -25,22 +25,22 @@ query MyQuery {
     edges {
       node {
         order
-        adam
-        adamWins
-        jon
-        jonWins
-        bones
-        bonesWins
-        brandon
-        brandonWins
-        cody
-        codyWins
         krcil
         krcilWins
+        brandon
+        brandonWins
+        adam
+        adamWins
+        bones
+        bonesWins
+        cody
+        codyWins
         shane
         shaneWins
         trevor
         trevorWins
+        jon
+        jonWins
       }
     }
   }
