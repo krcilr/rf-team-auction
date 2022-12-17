@@ -26,7 +26,7 @@ const OwnersTable = ({ tableData }) => {
                     <Th className="alt-column"></Th>
                     <Th>Trevor</Th>
                     <Th></Th>
-                    <Th className="alt-column">Alex</Th>
+                    <Th className="alt-column">Jon</Th>
                     <Th className="alt-column"></Th>
                 </Tr>
             </Thead>
@@ -48,8 +48,8 @@ const OwnersTable = ({ tableData }) => {
                             <Td className="alt-column">{formatNumberColumn(edge.node.shaneWins, index)}</Td>
                             <Td>{edge.node.trevor}</Td>
                             <Td>{formatNumberColumn(edge.node.trevorWins, index)}</Td>
-                            <Td className="alt-column">{edge.node.alex}</Td>
-                            <Td className="alt-column">{formatNumberColumn(edge.node.alexWins, index)}</Td>
+                            <Td className="alt-column">{edge.node.jon}</Td>
+                            <Td className="alt-column">{formatNumberColumn(edge.node.jonWins, index)}</Td>
                         </Tr>
                     ))
                 }

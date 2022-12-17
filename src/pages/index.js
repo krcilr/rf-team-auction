@@ -27,8 +27,8 @@ query MyQuery {
         order
         adam
         adamWins
-        alex
-        alexWins
+        jon
+        jonWins
         bones
         bonesWins
         brandon
